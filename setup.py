@@ -1,11 +1,14 @@
 from setuptools import setup, find_packages
 
+with open("README.md","r") as f:
+    description = f.read()
+
 setup(
     name='datacompass',
-    version='0.1',
+    version='0.4',
     packages=find_packages(),
-    description='A short description of your package',
-    long_description=open('README.md').read(),
+    description='EDA in 4 lines of Code',
+    long_description=description,
     long_description_content_type='text/markdown',
     author='sai_koushik',
     author_email='saikoushik.gsk@gmail.com',
